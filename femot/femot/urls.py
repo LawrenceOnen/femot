@@ -16,11 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
-from users import views
+from . import views
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    url(r'^users', views.home, name='users')
-    url(r'^boards', views.boards, name='boards')
+   # url(r'^users', views.home, name='users')
+    #url(r'^boards', views.boards, name='boards')
     
 ]

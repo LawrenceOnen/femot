@@ -1,7 +1,7 @@
-from django.shortcuts import render
-from django.http.response import HttpResponse
+from django.conf.urls import url
+from django.contrib import admin
+from femot.boards.models import Board
 
-# Create your views here.
 def boards(request):
     #return HttpResponse('Your board is here')
     board = Board.objects.all()

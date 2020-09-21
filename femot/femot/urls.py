@@ -9,5 +9,5 @@ urlpatterns = [
     #url(r'^users/', views.users, name='users'),
     url(r'^boards/', views.boards, name='boards'),
     #url(r'^topics/', views.topics, name='topics'),
-    #url(r'^$', views.index,),
+    url(r'^$', views.index,),
 ]

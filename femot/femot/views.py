@@ -1,9 +1,9 @@
 from django.conf.urls import url
 from django.contrib import admin
-from femot.boards.models import Board
+from django.http import HttpResponse
 
 def boards(request):
-    #return HttpResponse('Your board is here')
-    board = Board.objects.all()
-    #create a lit to hold names
-    boards_names = list()
+    return HttpResponse('Your board is here')
+
+def index(request):
+    return HttpResponse('Your index is here')
